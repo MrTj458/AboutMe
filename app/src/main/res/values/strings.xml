@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AboutMe</string>
+
+    <string name="title">About Me</string>
+    <string name="my_name">Trevor Hodsdon</string>
+    <string name="action_settings">Settings</string>
+</resources>
