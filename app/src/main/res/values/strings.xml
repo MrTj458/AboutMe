@@ -4,4 +4,7 @@
     <string name="title">About Me</string>
     <string name="my_name">Trevor Hodsdon</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_minecraft">MinecraftActivity</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>

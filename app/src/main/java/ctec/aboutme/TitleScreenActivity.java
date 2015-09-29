@@ -7,12 +7,13 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.ImageButton;
 import android.view.View;
+import android.content.Intent;
 
 public class TitleScreenActivity extends AppCompatActivity
 {
-        private TextView titleText;
-        private TextView nameText;
-        private ImageButton nextButton;
+    private TextView titleText;
+    private TextView nameText;
+    private ImageButton openMinecraftButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,7 @@ public class TitleScreenActivity extends AppCompatActivity
 
         titleText = (TextView) findViewById(R.id.titleText);
         nameText = (TextView) findViewById(R.id.nameText);
-        nextButton = (ImageButton) findViewById(R.id.nextButton);
+        openMinecraftButton = (ImageButton) findViewById(R.id.nextButton);
 
         setupListeners();
     }
@@ -50,19 +51,15 @@ public class TitleScreenActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    private void nextScreen()
-    {
-        //Go to next screen.
-    }
-
     private void setupListeners()
     {
-        nextButton.setOnClickListener(new View.OnClickListener()
+        openMinecraftButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View buttonView)
+            public void onClick(View view)
             {
-                nextScreen();
+                Intent myIntent = new Intent(view.getContext(), MinecraftActivity.class);
+                startActivityForResult(myIntent, 0);
             }
         });
     }
