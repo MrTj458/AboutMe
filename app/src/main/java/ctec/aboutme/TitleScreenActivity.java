@@ -57,9 +57,9 @@ public class TitleScreenActivity extends AppCompatActivity
         openFromButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View view)
+            public void onClick(View buttonView)
             {
-                Intent myIntent = new Intent(view.getContext(), FromActivity.class);
+                Intent myIntent = new Intent(buttonView.getContext(), MinecraftActivity.class);
                 startActivityForResult(myIntent, 0);
             }
         });

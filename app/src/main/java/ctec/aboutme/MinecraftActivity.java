@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
+import android.view.View;
+import android.content.Intent;
+
 
 public class MinecraftActivity extends AppCompatActivity
 {
@@ -14,6 +17,10 @@ public class MinecraftActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_minecraft);
+
+        openCarsButton = (ImageButton) findViewById(R.id.toCarsFromMinecraft);
+
+        setupListeners();
     }
 
     @Override
@@ -36,5 +43,18 @@ public class MinecraftActivity extends AppCompatActivity
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void setupListeners()
+    {
+        openCarsButton.setOnclickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View buttonView)
+            {
+                Intent myIntent = new Intent(buttonView.getContext(), CarsActivity.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
     }
 }

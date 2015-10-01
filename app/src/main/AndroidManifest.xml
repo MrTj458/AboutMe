@@ -24,6 +24,7 @@
             android:name=".FromActivity"
             android:label="@string/title_activity_from" >
         </activity>
+
     </application>
 
 </manifest>

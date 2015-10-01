@@ -8,4 +8,5 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_from">fromActivity</string>
+    <string name="title_activity_does_nothing">DoesNothingActivity</string>
 </resources>
