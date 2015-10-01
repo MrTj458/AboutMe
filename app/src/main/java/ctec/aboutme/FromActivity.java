@@ -5,21 +5,28 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
+import android.view.View;
+import android.content.Intent;
 
-public class MinecraftActivity extends AppCompatActivity
+public class FromActivity extends AppCompatActivity
 {
-    private ImageButton openCarsButton;
+    private ImageButton openMinecraftButton;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_minecraft);
+        setContentView(R.layout.activity_from);
+
+        openMinecraftButton = (ImageButton) findViewById(R.id.toMinecraftFromFrom);
+
+        setupListeners();
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_minecraft, menu);
+        getMenuInflater().inflate(R.menu.menu_from, menu);
         return true;
     }
 
@@ -36,5 +43,18 @@ public class MinecraftActivity extends AppCompatActivity
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void setupListeners()
+    {
+        openMinecraftButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent myIntent = new Intent(view.getContext(), MinecraftActivity.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
     }
 }

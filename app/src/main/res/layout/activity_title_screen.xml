@@ -12,8 +12,6 @@
         android:layout_height="wrap_content"
         android:text="@string/title"
         android:id="@+id/titleText"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:textSize="48dp"
         android:textStyle="bold|italic"
         android:textColor="#ffb20b" />
@@ -32,10 +30,11 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/nextButton"
+        android:id="@+id/toFromFromTitle"
         android:layout_centerHorizontal="true"
         android:src="@drawable/forward_button"
         android:layout_below="@+id/nameText"
-        android:background="#3f3f3f" />
+        android:background="#3f3f3f"
+        android:clickable="false" />
 
 </RelativeLayout>

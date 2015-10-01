@@ -5,24 +5,25 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-import android.widget.ImageButton;
 import android.view.View;
+import android.widget.ImageButton;
 import android.content.Intent;
 
 public class TitleScreenActivity extends AppCompatActivity
 {
     private TextView titleText;
     private TextView nameText;
-    private ImageButton openMinecraftButton;
+    private ImageButton openFromButton;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_title_screen);
 
         titleText = (TextView) findViewById(R.id.titleText);
         nameText = (TextView) findViewById(R.id.nameText);
-        openMinecraftButton = (ImageButton) findViewById(R.id.nextButton);
+        openFromButton = (ImageButton) findViewById(R.id.toFromFromTitle);
 
         setupListeners();
     }
@@ -53,12 +54,12 @@ public class TitleScreenActivity extends AppCompatActivity
 
     private void setupListeners()
     {
-        openMinecraftButton.setOnClickListener(new View.OnClickListener()
+        openFromButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
             {
-                Intent myIntent = new Intent(view.getContext(), MinecraftActivity.class);
+                Intent myIntent = new Intent(view.getContext(), FromActivity.class);
                 startActivityForResult(myIntent, 0);
             }
         });

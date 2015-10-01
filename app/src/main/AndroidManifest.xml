@@ -20,6 +20,10 @@
             android:name=".MinecraftActivity"
             android:label="@string/title_activity_minecraft" >
         </activity>
+        <activity
+            android:name=".FromActivity"
+            android:label="@string/title_activity_from" >
+        </activity>
     </application>
 
 </manifest>
