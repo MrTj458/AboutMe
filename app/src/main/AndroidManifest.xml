@@ -24,7 +24,26 @@
             android:name=".FromActivity"
             android:label="@string/title_activity_from" >
         </activity>
-
+        <activity
+            android:name=".CarsActivity"
+            android:label="@string/title_activity_cars"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".JobActivity"
+            android:label="@string/title_activity_job"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ComputerActivity"
+            android:label="@string/title_activity_computer"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".EndActivity"
+            android:label="@string/title_activity_end"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>

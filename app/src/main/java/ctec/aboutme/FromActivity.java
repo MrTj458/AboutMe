@@ -10,7 +10,7 @@ import android.content.Intent;
 
 public class FromActivity extends AppCompatActivity
 {
-    //private ImageButton openMinecraftButton;
+    private ImageButton openMinecraftButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -18,9 +18,9 @@ public class FromActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_from);
 
-        //openMinecraftButton = (ImageButton) findViewById(R.id.toMinecraftFromFrom);
+        openMinecraftButton = (ImageButton) findViewById(R.id.toMinecraftFromFrom);
 
-        //setupListeners();
+        setupListeners();
     }
 
     @Override
@@ -44,7 +44,7 @@ public class FromActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
-/*
+
     public void setupListeners()
     {
         openMinecraftButton.setOnClickListener(new View.OnClickListener()
@@ -57,6 +57,4 @@ public class FromActivity extends AppCompatActivity
             }
         });
     }
-
-    */
 }

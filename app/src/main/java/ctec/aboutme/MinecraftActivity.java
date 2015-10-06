@@ -47,14 +47,14 @@ public class MinecraftActivity extends AppCompatActivity
 
     public void setupListeners()
     {
-        openCarsButton.setOnclickListener(new View.OnClickListener()
+        openCarsButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View buttonView)
             {
                 Intent myIntent = new Intent(buttonView.getContext(), CarsActivity.class);
                 startActivityForResult(myIntent, 0);
-            }
+        }
         });
     }
 }

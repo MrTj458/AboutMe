@@ -9,4 +9,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_from">fromActivity</string>
     <string name="title_activity_does_nothing">DoesNothingActivity</string>
+    <string name="title_activity_cars">CarsActivity</string>
+    <string name="title_activity_job">JobActivity</string>
+    <string name="title_activity_computer">ComputerActivity</string>
+    <string name="title_activity_end">EndActivity</string>
 </resources>
