@@ -17,7 +17,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
         android:textColor="#e49227"
-        android:background="#515151" />
+        android:background="#515151"
+        android:textSize="14dp" />
 
     <ImageButton
         android:layout_width="64dp"

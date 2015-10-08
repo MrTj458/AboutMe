@@ -14,7 +14,9 @@
         android:id="@+id/titleText"
         android:textSize="48dp"
         android:textStyle="bold|italic"
-        android:textColor="#ffb20b" />
+        android:textColor="#ffb20b"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"

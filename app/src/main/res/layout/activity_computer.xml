@@ -16,7 +16,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textColor="#d7931c"
-        android:background="#5e5e5e" />
+        android:background="#5e5e5e"
+        android:textSize="14dp" />
 
     <ImageButton
         android:layout_width="64dp"

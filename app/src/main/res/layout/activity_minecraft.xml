@@ -19,7 +19,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:textColor="#ffad1a"
-        android:background="#4a4a4a" />
+        android:background="#4a4a4a"
+        android:textSize="14dp" />
 
     <ImageButton
         android:layout_width="64dp"

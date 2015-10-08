@@ -17,7 +17,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textColor="#ffa02d"
-        android:background="#4e4e4e" />
+        android:background="#4e4e4e"
+        android:textSize="14dp" />
 
     <ImageButton
         android:layout_width="64dp"
