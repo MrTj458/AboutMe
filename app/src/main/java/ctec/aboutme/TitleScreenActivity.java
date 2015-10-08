@@ -22,7 +22,7 @@ public class TitleScreenActivity extends AppCompatActivity
 
         setupListeners();
     }
-
+    
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
